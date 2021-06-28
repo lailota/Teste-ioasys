@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C90A5A8E2685FB2300372570 /* LoginFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A5A8D2685FB2300372570 /* LoginFormModelValidator.swift */; };
+		C90A5A902685FC1E00372570 /* LoginConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A5A8F2685FC1E00372570 /* LoginConstants.swift */; };
+		C90A5A952686102F00372570 /* LoginApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A5A942686102F00372570 /* LoginApiModel.swift */; };
+		C90A5A9D2686586E00372570 /* EntrerpriseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A5A9C2686586E00372570 /* EntrerpriseViewController.swift */; };
+		C90A5A9F2686916D00372570 /* Enterprise.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A5A9E2686916C00372570 /* Enterprise.swift */; };
+		C90A5AA32688DF6F00372570 /* EnterpriseApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A5AA22688DF6F00372570 /* EnterpriseApiModel.swift */; };
+		C9402844268956FE00D8B528 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9402843268956FE00D8B528 /* DetailViewController.swift */; };
+		C940285A2689D82A00D8B528 /* LoginVieControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94028592689D82A00D8B528 /* LoginVieControllerTests.swift */; };
 		C9A804DF26851831006DDB31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A804DE26851831006DDB31 /* AppDelegate.swift */; };
 		C9A804E126851831006DDB31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A804E026851831006DDB31 /* SceneDelegate.swift */; };
 		C9A804E326851831006DDB31 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A804E226851831006DDB31 /* LoginViewController.swift */; };
@@ -16,7 +24,27 @@
 		C9A804F326851BE8006DDB31 /* Rubik in Resources */ = {isa = PBXBuildFile; fileRef = C9A804F226851BE8006DDB31 /* Rubik */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C94028542689D7EF00D8B528 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9A804D326851831006DDB31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9A804DA26851831006DDB31;
+			remoteInfo = "Teste ioasys - Laila";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		C90A5A8D2685FB2300372570 /* LoginFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormModelValidator.swift; sourceTree = "<group>"; };
+		C90A5A8F2685FC1E00372570 /* LoginConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConstants.swift; sourceTree = "<group>"; };
+		C90A5A942686102F00372570 /* LoginApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginApiModel.swift; sourceTree = "<group>"; };
+		C90A5A9C2686586E00372570 /* EntrerpriseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrerpriseViewController.swift; sourceTree = "<group>"; };
+		C90A5A9E2686916C00372570 /* Enterprise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enterprise.swift; sourceTree = "<group>"; };
+		C90A5AA22688DF6F00372570 /* EnterpriseApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterpriseApiModel.swift; sourceTree = "<group>"; };
+		C9402843268956FE00D8B528 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C940284F2689D7EE00D8B528 /* Teste ioasys - LailaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Teste ioasys - LailaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C94028532689D7EF00D8B528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C94028592689D82A00D8B528 /* LoginVieControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVieControllerTests.swift; sourceTree = "<group>"; };
 		C9A804DB26851831006DDB31 /* Teste ioasys - Laila.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Teste ioasys - Laila.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A804DE26851831006DDB31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9A804E026851831006DDB31 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,6 +57,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C940284C2689D7EE00D8B528 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C9A804D826851831006DDB31 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,10 +74,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C94028452689CB4200D8B528 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9A804E226851831006DDB31 /* LoginViewController.swift */,
+				C90A5A9C2686586E00372570 /* EntrerpriseViewController.swift */,
+				C9402843268956FE00D8B528 /* DetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C94028462689CB6300D8B528 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C90A5A8D2685FB2300372570 /* LoginFormModelValidator.swift */,
+				C90A5A8F2685FC1E00372570 /* LoginConstants.swift */,
+				C90A5A942686102F00372570 /* LoginApiModel.swift */,
+				C90A5A9E2686916C00372570 /* Enterprise.swift */,
+				C90A5AA22688DF6F00372570 /* EnterpriseApiModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C94028472689CFDC00D8B528 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9A804E426851831006DDB31 /* Main.storyboard */,
+				C9A804E926851836006DDB31 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C94028502689D7EE00D8B528 /* Teste ioasys - LailaTests */ = {
+			isa = PBXGroup;
+			children = (
+				C94028592689D82A00D8B528 /* LoginVieControllerTests.swift */,
+				C94028532689D7EF00D8B528 /* Info.plist */,
+			);
+			path = "Teste ioasys - LailaTests";
+			sourceTree = "<group>";
+		};
 		C9A804D226851831006DDB31 = {
 			isa = PBXGroup;
 			children = (
 				C9A804DD26851831006DDB31 /* Teste ioasys - Laila */,
+				C94028502689D7EE00D8B528 /* Teste ioasys - LailaTests */,
 				C9A804DC26851831006DDB31 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				C9A804DB26851831006DDB31 /* Teste ioasys - Laila.app */,
+				C940284F2689D7EE00D8B528 /* Teste ioasys - LailaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,11 +137,11 @@
 			children = (
 				C9A804DE26851831006DDB31 /* AppDelegate.swift */,
 				C9A804E026851831006DDB31 /* SceneDelegate.swift */,
-				C9A804E226851831006DDB31 /* LoginViewController.swift */,
-				C9A804E426851831006DDB31 /* Main.storyboard */,
-				C9A804E726851836006DDB31 /* Assets.xcassets */,
-				C9A804E926851836006DDB31 /* LaunchScreen.storyboard */,
+				C94028462689CB6300D8B528 /* Models */,
+				C94028472689CFDC00D8B528 /* View */,
+				C94028452689CB4200D8B528 /* Controllers */,
 				C9A804EC26851836006DDB31 /* Info.plist */,
+				C9A804E726851836006DDB31 /* Assets.xcassets */,
 				C9A804F226851BE8006DDB31 /* Rubik */,
 			);
 			path = "Teste ioasys - Laila";
@@ -73,6 +150,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C940284E2689D7EE00D8B528 /* Teste ioasys - LailaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C94028562689D7EF00D8B528 /* Build configuration list for PBXNativeTarget "Teste ioasys - LailaTests" */;
+			buildPhases = (
+				C940284B2689D7EE00D8B528 /* Sources */,
+				C940284C2689D7EE00D8B528 /* Frameworks */,
+				C940284D2689D7EE00D8B528 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C94028552689D7EF00D8B528 /* PBXTargetDependency */,
+			);
+			name = "Teste ioasys - LailaTests";
+			productName = "Teste ioasys - LailaTests";
+			productReference = C940284F2689D7EE00D8B528 /* Teste ioasys - LailaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C9A804DA26851831006DDB31 /* Teste ioasys - Laila */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9A804EF26851836006DDB31 /* Build configuration list for PBXNativeTarget "Teste ioasys - Laila" */;
@@ -86,6 +181,8 @@
 			dependencies = (
 			);
 			name = "Teste ioasys - Laila";
+			packageProductDependencies = (
+			);
 			productName = "Teste ioasys - Laila";
 			productReference = C9A804DB26851831006DDB31 /* Teste ioasys - Laila.app */;
 			productType = "com.apple.product-type.application";
@@ -99,6 +196,10 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					C940284E2689D7EE00D8B528 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = C9A804DA26851831006DDB31;
+					};
 					C9A804DA26851831006DDB31 = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -113,16 +214,26 @@
 				Base,
 			);
 			mainGroup = C9A804D226851831006DDB31;
+			packageReferences = (
+			);
 			productRefGroup = C9A804DC26851831006DDB31 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				C9A804DA26851831006DDB31 /* Teste ioasys - Laila */,
+				C940284E2689D7EE00D8B528 /* Teste ioasys - LailaTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C940284D2689D7EE00D8B528 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C9A804D926851831006DDB31 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,17 +248,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C940284B2689D7EE00D8B528 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C940285A2689D82A00D8B528 /* LoginVieControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C9A804D726851831006DDB31 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C9A804E326851831006DDB31 /* LoginViewController.swift in Sources */,
+				C90A5AA32688DF6F00372570 /* EnterpriseApiModel.swift in Sources */,
+				C90A5A9F2686916D00372570 /* Enterprise.swift in Sources */,
 				C9A804DF26851831006DDB31 /* AppDelegate.swift in Sources */,
+				C90A5A902685FC1E00372570 /* LoginConstants.swift in Sources */,
 				C9A804E126851831006DDB31 /* SceneDelegate.swift in Sources */,
+				C90A5A9D2686586E00372570 /* EntrerpriseViewController.swift in Sources */,
+				C9402844268956FE00D8B528 /* DetailViewController.swift in Sources */,
+				C90A5A8E2685FB2300372570 /* LoginFormModelValidator.swift in Sources */,
+				C90A5A952686102F00372570 /* LoginApiModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C94028552689D7EF00D8B528 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9A804DA26851831006DDB31 /* Teste ioasys - Laila */;
+			targetProxy = C94028542689D7EF00D8B528 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C9A804E426851831006DDB31 /* Main.storyboard */ = {
@@ -169,6 +303,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C94028572689D7EF00D8B528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NU7PDN3PT3;
+				INFOPLIST_FILE = "Teste ioasys - LailaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lailagh.Teste-ioasys---LailaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Teste ioasys - Laila.app/Teste ioasys - Laila";
+			};
+			name = Debug;
+		};
+		C94028582689D7EF00D8B528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NU7PDN3PT3;
+				INFOPLIST_FILE = "Teste ioasys - LailaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lailagh.Teste-ioasys---LailaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Teste ioasys - Laila.app/Teste ioasys - Laila";
+			};
+			name = Release;
+		};
 		C9A804ED26851836006DDB31 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -326,6 +500,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C94028562689D7EF00D8B528 /* Build configuration list for PBXNativeTarget "Teste ioasys - LailaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C94028572689D7EF00D8B528 /* Debug */,
+				C94028582689D7EF00D8B528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C9A804D626851831006DDB31 /* Build configuration list for PBXProject "Teste ioasys - Laila" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
