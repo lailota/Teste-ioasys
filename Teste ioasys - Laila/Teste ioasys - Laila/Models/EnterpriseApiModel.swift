@@ -14,8 +14,6 @@ class EnterpriseApiModel {
     
     public var enterprises: [Enterprise] = []
     public var filteredEnterprises: [Enterprise] = []
-    public var searchResults: Bool = false
-    public var enterpriseTotal: Int = 0
     
     var api = LoginApiModel()
     
@@ -70,7 +68,6 @@ class EnterpriseApiModel {
                                                                                                  enterpriseTypeName: enterpriseType["enterprise_type_name"] as! String),
                                                                   cellColor: colorCell)
                     self.enterprises.append(objectEnterprise)
-                    self.enterpriseTotal = self.enterprises.count
                 }
                 
             } catch {}

@@ -26,9 +26,6 @@ class EntrerpriseViewController: UIViewController {
         return EnterpriseApiModel.enterprise
     }()
     
-    var enterpriseList = [Enterprise]()
-    var enterpriseListFiltered = [Enterprise]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,8 +34,7 @@ class EntrerpriseViewController: UIViewController {
         
         myTableView.delegate = self
         myTableView.dataSource = self
-        
-        myTableView.reloadData()
+        searchBar.delegate = self
         
     }
 
@@ -53,13 +49,13 @@ class EntrerpriseViewController: UIViewController {
 extension EntrerpriseViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if model.searchResults {
 
-            resultsLabel.text = "\(model.filteredEnterprises.count) resultados encontrados"
-            return model.filteredEnterprises.count
-        } else {
+        if model.filteredEnterprises.isEmpty {
             resultsLabel.text = "\(model.enterprises.count) resultados encontrados"
             return model.enterprises.count
+        } else {
+            resultsLabel.text = "\(model.filteredEnterprises.count) resultados encontrados"
+            return model.filteredEnterprises.count
         }
         
     }
@@ -68,14 +64,9 @@ extension EntrerpriseViewController: UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: MyCell? = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath) as? MyCell
         
-        if model.searchResults && model.enterpriseTotal != 0 {
-            cell?.cellLabel.text = model.filteredEnterprises[indexPath.row].enterpriseName.uppercased()
-            cell?.cellView.backgroundColor = model.filteredEnterprises[indexPath.row].cellColor
-        } else {
             cell?.cellLabel.text = model.enterprises[indexPath.row].enterpriseName.uppercased()
             cell?.cellView.backgroundColor = model.enterprises[indexPath.row].cellColor
-        }
-        
+
         return cell ?? UITableViewCell()
     }
     
@@ -98,7 +89,30 @@ extension EntrerpriseViewController: UITableViewDelegate, UITableViewDataSource 
 
 // MARK: - Search bar methods
 
+extension EntrerpriseViewController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        model.filteredEnterprises = []
 
+        if searchText.isEmpty {
+            model.filteredEnterprises = model.enterprises
+            
+        } else {
+            for value in model.enterprises {
+                if value.enterpriseName.uppercased().contains(searchText.uppercased()) {
+                    model.filteredEnterprises.append(value)
+                }
+            }
+        }
+        self.myTableView.reloadData()
+    }
+    
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+}
     
 
 
